@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MWN | QR Code Generator | Abdulkadir Uukow</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>QR Code Generator</h1>
+        <p>Fill in the fields to create a QR code.</p>
+      </header>
+      <div class="form">
+        <input type="text" spellcheck="false" id="fullName" placeholder="Full Name">
+        <input type="text" spellcheck="false" id="serialNumber" placeholder="Serial Number or ID">
+        <input type="date" id="date" placeholder="Date">
+        <textarea id="description" placeholder="Description"></textarea>
+        <button id="generateQRCode" onclick="generateQRCode()">Generate QR Code</button>
+        <a id="downloadLink" download="qrcode.png" style="display: none;">
+          <button id="downloadButton">Download QR Code</button>
+        </a>
+      </div>
+      <div class="qr-code">
+        <img src="" alt="qr-code" id="qrCodeImage">
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
